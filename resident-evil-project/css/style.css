@@ -1,0 +1,25 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Colors */
+:root {
+    --color1: #000;
+    --color2: #fff;
+    --color3: #930912;
+}
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* Titles */
+h1, h2, h3, h4, h5, h6 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* paragraph */
+p {
+    font-family: "Open Sans", sans-serif;
+}
