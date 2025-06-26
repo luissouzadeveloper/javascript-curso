@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeira Aplicação</title>
+</head>
+<body>
+    <h1>Primeira Aplicação</h1>
+
+    <p class="msg">
+
+    </p>
+
+    <script>
+        alert('Olá, Mundo!');
+
+        let hora = new Date().getHours();
+        let msg = document.querySelector('.msg');
+
+        if (hora < 12) {
+            msg.innerHTML = 'Bom dia';
+        } else if (hora < 18) {
+            msg.innerHTML = 'Boa tarde';
+        } else {
+            msg.innerHTML = 'Boa noite';
+        }
+    </script>
+</body>
+</html>
