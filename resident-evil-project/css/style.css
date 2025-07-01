@@ -9,6 +9,7 @@
     --color1: #000;
     --color2: #fff;
     --color3: #930912;
+    --color4: #0e0e0e;
 }
 
 /* Fonts */
@@ -58,4 +59,31 @@ a{
 #nav > #nav-list li:hover{
     background-color: var(--color3);
     text-decoration: underline;
+}
+
+/* Section 1 */
+#section1 {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 80vh;
+    background-color: var(--color4);
+    text-align: center;
+    padding: 50px 20px;
+    background-image: url(../img/resident-evil-background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+#section1 > .introduction{
+    margin: 0 15px;
+}
+.introduction > .content > h1 {
+    font-size: 2.5em;
+}
+.introduction > .content > h1, p {
+    color: var(--color2);
+    margin-top: 15px;
+    line-height: 1.5;
 }
