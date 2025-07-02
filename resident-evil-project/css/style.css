@@ -61,6 +61,10 @@ a{
     text-decoration: underline;
 }
 
+section {
+    background-color: var(--color4);
+}
+
 /* Section 1 */
 #section1 {
     display: flex;
@@ -86,4 +90,22 @@ a{
     color: var(--color2);
     margin-top: 15px;
     line-height: 1.5;
+}
+
+/* Section 2 */
+#section2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 60px;
+}
+#section2 > .about-content {
+    margin: 0 20px;
+}
+.about-content > h2{
+    font-size: 2em;
+    color: var(--color3);
+}
+.about-content > p{
+    text-align: justify;
 }
