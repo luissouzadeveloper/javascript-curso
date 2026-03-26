@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 03</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Formulários</h1>
+
+    <form name="cadastro">
+        Nome: <input type="text" name="nome" id="name">
+        Email: <input type="email" name="email">
+
+        <select name="sexo">
+            <option>--</option>
+            <option value="masculino">M</option>
+            <option value="feminino">F</option>
+        </select>
+    </form>
+
+    <button onclick="acao()">Alterar</button>
+   
+    <script src="script.js"></script>
+</body>
+</html>
