@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navegando pelos elementos</title>
+
+    <style>
+        #itens{
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1>Navegando pelos elementos</h1>
+
+    <div>Irmão anterior</div>
+        <div id="itens">
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+            <p>4</p>
+        </div>
+    <div>Próximo irmão</div>
+
+    <script>
+        const lista = document.querySelector('#itens');
+        //console.log(lista.parentNode);
+        //console.log(lista.childNodes[1])
+        //console.log(lista.lastChild);
+        //console.log(lista.nextSibling);
+        //console.log(lista.previousSibling);
+
+        //console.log(lista.children);
+        //console.log(lista.firstElementChild);
+        //console.log(lista.lastElementChild);
+
+        console.log(lista.nextElementSibling);
+        console.log(lista.previousElementSibling);
+    </script>
+</body>
+</html>
