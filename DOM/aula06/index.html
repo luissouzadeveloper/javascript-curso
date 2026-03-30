@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atributos personalizados</title>
+</head>
+<body>
+    <h1>Atributos personalizados</h1>
+
+    <span id="itens" quantidade="2" data-status="pendente">
+        2 itens no carrinho
+    </span>
+
+    <script>
+        const obj = document.getElementById('itens');
+        //console.log(obj.id);
+        //obj.setAttribute('quantidade', '7')
+        //console.log(obj.getAttribute('quantidade'));
+
+        obj.dataset.status = 'finalizado'
+        console.log(obj.dataset.status);
+    </script>
+</body>
+</html>
