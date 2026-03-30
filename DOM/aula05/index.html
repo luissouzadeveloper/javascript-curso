@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecionando atributos</title>
+
+    <style>
+        #itens{
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1>Selecionando atributos</h1>
+
+    <img src="img/celular.png" width="300" id="imagem">
+    <a id="link" onclick="alterar()">Alterar</a>
+
+    <script>
+        function alterar() {
+            const img = document.querySelector('#imagem');
+            img.src = 'img/grafico.png'
+        }
+        
+    </script>
+</body>
+</html>
