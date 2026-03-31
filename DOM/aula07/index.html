@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecionando classes</title>
+
+    <style>
+        body{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 3em;
+        }
+
+        .red{
+            background-color: red;
+        }
+
+        .blue{
+            background-color: blue;
+        }
+
+        .green{
+            background-color: green;
+        }
+
+        .text{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Selecionando classes</h1>
+
+    <span>Luis Felipe</span>
+
+    <button onclick="exec()">Clique aqui</button>
+
+    <script>
+        function exec() {
+            const obj = document.querySelector('span');
+            const classes = obj.classList;
+            classes.add('red', 'text');
+            //classes.toggle('red');
+        }
+
+    </script>
+</body>
+</html>
